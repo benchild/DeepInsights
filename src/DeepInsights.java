@@ -44,8 +44,10 @@ public class DeepInsights
 	
 	public static void main(String[] args) throws IOException, Z3Exception, InterruptedException
 	{
-		for (int t=0; t<9; t++) {
+		for (int t=0; t<10; t++) {
+		
 		currentNum = t;
+		result.clear();
 		String input = "input"+currentNum+".txt";
 		BufferedReader reader = new BufferedReader(new FileReader(input));
 		//only int now
